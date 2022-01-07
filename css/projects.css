@@ -1,0 +1,277 @@
+/* Projects.html css */
+.hide-x {
+	min-width: 100% !important;
+
+	overflow-x:hidden !important;
+}
+
+.year_title {
+	font-family: 'Noto Serif', serif;
+	color: #FBFAF5;
+	text-align: center;
+	
+}
+
+.year_split {
+	margin-left: 40%;
+	height: 10px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	margin-bottom: 2%;
+	width: 20%;
+}
+
+.project-card {
+	position: relative;
+}
+
+.large-card {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* Hover Processes */
+.project-card:hover 
+	.project-card-image-large {
+		filter: blur(8px);
+		-webkit-filter: blur(8px);
+
+	}
+
+.project-card:hover 
+	.project-card-large-overlay {
+		opacity: 1;
+		width: 100%; /*Slide in  Animation*/
+		left: 0; /*Slide in from Right Animation*/
+	}
+
+.project-card:hover 
+	.card-main-text-opacity {
+		opacity: 1;
+	}
+
+.project-card-image-large{
+	width: 100%; /*100% Of the Large-Card's Attributes. Essentially 60% Of Website.*/
+	height: auto;
+	transition: .5s ease;
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+}
+
+.project-card-large-overlay {
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%; /*Slide in from Right Animation*/
+	height: 100%;
+	width: 0%; /*Slide in  Animation*/
+	right: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project-card-overlay-darker {
+	background-color: rgba(0, 0, 0, 0.575) !important;
+}
+
+.card-font-title {
+	color: #f2f0e6;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+}
+
+.card-title-left-nosub {
+	color: white;
+	font-size: 3.5vw;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	text-align: center;
+}
+
+.card-title-left-nosub:after {
+    content: '';
+    width: 40%;
+	margin-top: 0.5%;
+
+    background-color: #dbaea3;
+    height: 4px;
+    display: block;
+	margin-bottom: 3%;
+}
+
+.card-title-left-withsub {
+	color: white;
+	font-size: 3.5vw;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	text-align: center;
+}
+
+.card-title-left-subtitle {
+	color: rgb(189, 189, 189);
+	font-size: 0.8vw;
+	font-family: 'Roboto', sans-serif !important;
+	position: absolute;
+	top: 17.6%;
+	left: 5.3%;
+	text-align: center;
+}
+
+.card-title-left-withsub:after {
+    content: '';
+    width: 40%;
+	margin-top: 2.5%;
+
+    background-color: #dbaea3;
+    height: 4px;
+    display: block;
+	margin-bottom: 3%;
+}
+
+.card-main-text {
+	color: #f2f0e6;
+	font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+	font-size: 1.47vw;
+	overflow-y: scroll;
+	max-height: 70%; /*Stops weird glitching when hovering on bottom right side*/
+	max-width: 60%; /*Stops weird glitching when hovering on right side*/
+	top: 26%;
+	left: 5%;
+	padding-bottom: 2%;
+	position: absolute;
+
+}
+
+.viewmore {
+	width: 5% /*Of 60%*/;
+	height: 8.334%;
+	position: absolute;
+	top: 93%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*Center at position*/
+}
+
+.year_group {
+	margin-top: 15%;
+}
+
+.card-bottomright-iconbar {
+	transition: 1s ease;
+	top: 99%;
+	left: 98.5%;
+	position: absolute;
+	transform: translate(-100%, -100%);
+}
+
+.card-bottomright-iconbar ul {
+	width: 2.2vw;
+}
+
+.card-bottomright-iconbar li {
+	margin-bottom: 28%;
+}
+
+.card-icon {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-bottomright-iconbar ul {
+      width: 2.5vw ;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-bottomright-iconbar ul {
+      width: 3vw ;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .large-card
+  {
+      width: 80% ;
+  }
+  .card-title-left-withsub {
+      font-size: 5vw ;
+  }
+  .card-title-left-subtitle {
+      font-size: 2.1vw ;
+  }
+  .card-title-left-withsub::after {
+      margin-top: 5% ;
+  }
+  .card-main-text {
+      top: 30% ;
+      font-size: 3vw ;
+      max-height: 65% ;
+      max-width: 80% ;
+      padding-bottom: 5% ;
+  }
+  .card-bottomright-iconbar ul {
+      width: 4.8vw ;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .large-card
+  {
+      width: 92% ;
+  }
+  .card-title-left-withsub {
+      font-size: 7vw ;
+  }
+  .card-title-left-subtitle {
+      font-size: 2.7vw ;
+      top: 21.6% ;
+  }
+  .card-title-left-withsub::after {
+      margin-top: 5% ;
+  }
+  .card-main-text {
+      top: 36% ;
+      font-size: 5vw ;
+      max-height: 65% ;
+      max-width: 80% ;
+      padding-bottom: 10% ;
+  }
+  .card-bottomright-iconbar ul {
+      width: 6.5vw ;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .large-card
+  {
+      width: 95% ;
+  }
+  .card-title-left-withsub {
+      font-size: 8vw ;
+  }
+  .card-title-left-subtitle {
+      font-size: 3.5vw ;
+      top: 22.6% ;
+  }
+  .card-title-left-withsub::after {
+      margin-top: 5% ;
+  }
+  .card-main-text {
+      top: 38% ;
+      font-size: 6vw ;
+      max-height: 65% ;
+      max-width: 80% ;
+      padding-bottom: 10% ;
+  }
+  .card-bottomright-iconbar ul {
+      width: 7.5vw ;
+  }
+}

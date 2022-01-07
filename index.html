@@ -1,0 +1,207 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfoilio Website</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+	
+	<script type = "text/javascript"
+		src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	</script>
+	<script type = "text/javascript"
+		src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+	</script>
+
+	<script src="js/main.js" defer></script>
+
+	
+</head>
+<body>
+
+    <div class = "cursor"></div>
+
+    <div class = "loader">
+        <div class = "spin">
+            <div class = "circle"></div>
+            <div class = "circle"></div>
+        </div>
+        <p id = "random-load-text" class = "random-load-text"></p>
+    </div>
+
+    <div class = "pageloaded">
+        <div class="first-container container parallax-effect">
+
+            <div class = "slider"></div>
+    
+            <div class="navbar sticky">
+                <ul style="list-style-type:none;">
+                    <li class="active link"><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" >Projects</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </div>
+    
+            <div class="banner">
+                <div class = "app-picture-text">
+                    <h1>TYH</h1>
+                    <p>Game Development student at NYP</p>
+                </div>
+            </div>
+    
+            <p class = "programmer-cout">std::cout &lt;&lt; </p>
+    
+            <p class = "programmer-cout cout-bot"> &lt;&lt; std::endl<span class = "cout-colon">;</span></p>
+    
+    
+        </div>
+    
+        <div class="after-parallax-effect container">
+            <div class= "main-text-font">
+    
+                <div class = "left-text">
+    
+                    <div class = "smooth-fade">
+                        <h1 class = "left-header-text"> About Me</h1>
+                    <div class = "about-me-overview-picture">
+                        <img src = "Images/me.jpg" class="img-responsive" />
+    
+    
+                    </div>
+    
+                    <p>
+                        Hi! I'm <span class = "funky-text-font">Tan Yong Hong</span>, 
+                    </p>
+                    <p class = "ending-paragraph">
+                        Currently schooling, at Nanyang Polytechnic for Game Development.<br>
+                        <br>
+                        I am an aspiring leader, and an avid programmer. <br>
+                        Outside of programming, I'm also into sports such as Badminton and Bowling. <br>
+    
+                    </p>
+                    <div class = "left-text-end">
+                        <p>Click <a href="aboutme.html" style = "text-decoration: underline; font-weight: bold;">here</a> to read further</p>
+                    </div>
+                    </div>
+                    
+                            
+    
+                    
+                </div>
+    
+                <hr class = "hr-thick-split">
+    
+                <div class = "smooth-fade">
+                    <h1 class = "project-showcase-title center-header-text"> Project Showcase</h1>
+                    
+                    <div>
+                        <img src = "Images/Server_LongBar.png" class = "project-longbar center-block">
+                    </div>
+
+                    <div id = "players" class = "players">
+                    </div>
+                    
+                    <div class = "carousel" aria-label = "Gallery">
+                        <ol class = "carousel__viewport">
+                            <li id = "carousel__slide1"
+                                tabindex = "0"
+                                class = "carousel__slide">
+                                <div class = "carousel__snapper">
+                                    <a href = "#carousel__slide4" class = "carousel__prev">Go to last slide</a>
+                                    <a href = "#carousel__slide2" class = "carousel__next">Go to next slide</a>
+                                </div>
+                            </li>
+                            <li id = "carousel__slide2"
+                                tabindex = "0"
+                                class = "carousel__slide">
+                                <div class = "carousel__snapper"></div>
+    
+                                <a href = "#carousel__slide1" class = "carousel__prev">Go to previous slide</a>
+                                <a href = "#carousel__slide3" class = "carousel__next">Go to next slide</a>
+                            </li>
+                            <li id = "carousel__slide3"
+                                tabindex = "0"
+                                class = "carousel__slide">
+                                <div class = "carousel__snapper"></div>
+    
+                                <a href = "#carousel__slide2"class = "carousel__prev">Go to previous slide</a>
+                                <a href = "#carousel__slide4" class = "carousel__next">Go to next slide</a>
+                            </li>
+                            <li id = "carousel__slide4"
+                                tabindex = "0"
+                                class = "carousel__slide">
+                                <div class = "carousel__snapper">
+                                    <iframe src = "https://www.youtube.com/embed/HiISgMdJ-yQ" frameborder = "0"></iframe>			
+                                </div>
+                                <a href = "#carousel__slide3" class = "carousel__prev">Go to previous slide</a>
+                                <a href = "#carousel__slide1" class = "carousel__next">Go to first slide</a>
+                            </li>
+                        </ol>
+                        <aside class = "carousel__navigation">
+                            <ol class = "carousel__navigation-list">
+                                <li class = "carousel__navigation-item">
+                                    <a href = "#carousel__slide1" class = "carousel__navigation-button">Go to slide 1</a>
+                                </li>
+                                <li class = "carousel__navigation-item">
+                                    <a href = "#carousel__slide2" class = "carousel__navigation-button">Go to slide 2</a>
+                                </li>
+                                <li class = "carousel__navigation-item">
+                                    <a href = "#carousel__slide3" class = "carousel__navigation-button">Go to slide 3</a>
+                                </li>
+                                <li class = "carousel__navigation-item">
+                                    <a href = "#carousel__slide4" class = "carousel__navigation-button">Go to slide 4</a>
+                                </li>
+                            </ol>
+                        </aside>
+    
+                    </div>
+    
+                    <div class = "right-text">
+                        <h1 class = "project-header-text">Minecraft Server</h1>
+                        <p style = "padding-top: 4%;">
+                            Currently still Live! Serving 2 Minecraft Gamemodes: 
+                            Prisons & Skyblock. Started this project in 2014 
+                            where I was merely configurating pre-made plugins 
+                            at best. <br>
+                            <br>
+                            In 2018, I picked up a simple programming language
+                            called skript, and in 2019 I picked up Java. <br>
+                            <br>
+                            Highest player count reached is 150, and we've 
+                            been able to maintain through all these years
+                            thanks to server donations<br>
+                            <br>
+                            IP: VortexNetwork.Me
+                        </p>
+                        <div class = "right-text-end">
+                            <p>Click <a href="projects.html" style = "text-decoration: underline; font-weight: bold;">here</a> to read further</p>
+                        </div>
+    
+                    </div>
+                </div>
+                
+    
+            </div>
+        
+        </div>
+    
+        <div class ="contacts-container parallax-effect">
+            <div class="bot-bar">
+                <ul style="list-style-type:none;">
+                    <li><a href="https://www.linkedin.com/in/tan-yong-hong-374593200/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/Coolfire02/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCOUeDsz8-AeWh-tCHE1KWjw" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+	
+	
+
+</body>
+</html>
