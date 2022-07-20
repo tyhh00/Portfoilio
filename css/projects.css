@@ -32,6 +32,10 @@
 	margin: 0 auto;
 }
 
+.subset-card {
+    margin-top: 10%;
+}
+
 /* Hover Processes */
 .project-card:hover 
 	.project-card-image-large {

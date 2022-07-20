@@ -339,7 +339,8 @@ a:active {
 
 .img-responsive {
 	border-radius: 50%;
-	width: 100%;
+	width: 15vw;
+    margin-bottom: 3vh;
 }
 
 .about-me-overview-picture {
