@@ -146,6 +146,17 @@ a:active {
   	width: 100%;
 }
 
+.contacts {
+    font-family: 'Rubik', sans-serif;
+    font-size: x-large;
+    color: #ffffffd6;
+    margin-top: 10%;
+    display: block;
+    margin-right: 0%;
+    margin-left: 0%;
+    text-align: center;
+}
+
 .programmer-cout {
 	font-size: 2vh;
 	margin-top: 20%;
